@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "com.pancake.shincolle.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "ShinColle.refmap.json",
+  "refmap": "shin_colle.refmap.json",
   "mixins": [
   ],
   "client": [
