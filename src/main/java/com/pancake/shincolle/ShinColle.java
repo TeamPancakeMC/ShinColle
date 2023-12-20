@@ -1,5 +1,8 @@
 package com.pancake.shincolle;
 
+import com.pancake.shincolle.init.SCBlocks;
+import com.pancake.shincolle.init.SCEntityTypes;
+import com.pancake.shincolle.init.SCItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -12,6 +15,9 @@ public class ShinColle {
 
     public ShinColle() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        SCItems.ITEMS.register(eventBus);
+        SCBlocks.BLOCKS.register(eventBus);
+        SCEntityTypes.ENTITY_TYPES.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
